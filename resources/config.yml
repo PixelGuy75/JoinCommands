@@ -1,0 +1,5 @@
+# JoinCommand by PixelGuy75 Config File;
+############################################################################
+# Command: The command you want to execute when a player joins the game;
+# {player} = the player that joins the game;
+Command: tell {player} You are awesome!

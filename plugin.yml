@@ -1,0 +1,6 @@
+name: JoinCommands
+main: PixelGuy75\JoinCommands\Main
+version: 1.0
+api: [1.0.0]
+author: PixelGuy75
+load: POSTWORLD
