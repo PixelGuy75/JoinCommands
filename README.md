@@ -1,4 +1,4 @@
 JoinCommands
 ============
 
-Execute commands when a player joins
+Execute commands on different player events
