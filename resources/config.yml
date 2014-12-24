@@ -1,5 +1,15 @@
 # JoinCommand by PixelGuy75 Config File;
 ############################################################################
-# Command: The command you want to execute when a player joins the game;
 # {player} = the player that joins the game;
-Command: tell {player} You are awesome!
+############################################################################
+# Command executed when player joins the game;
+JoinCommand: tell {player} You are awesome!
+############################################################################
+# Command executed when player dies;
+DeathCommand: say {player} Died again...
+############################################################################
+# Command executed when player does /spawn or respawns into the game;
+RespawnCommand: tell {player} Welcome to spawn!
+############################################################################
+# Command executed when player leaves the game;
+LeaveCommand: say {player} ragequit from the server!
