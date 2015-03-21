@@ -1,14 +1,9 @@
 <?php
 namespace PixelGuy75\JoinCommands;
 
-use pocketmine\command\Command;
-use pocketmine\command\CommandSender;
-use pocketmine\command\CommandExecuter;
 use pocketmine\command\ConsoleCommandSender;
-use pocketmine\Player;
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
-use pocketmine\Server;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerDeathEvent;
 use pocketmine\event\player\PlayerRespawnEvent;
