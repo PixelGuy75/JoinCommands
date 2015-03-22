@@ -16,7 +16,7 @@ class Main extends PluginBase implements Listener {
     }
   
   public function onJoin(PlayerJoinEvent $event) {
-	if($this->getConfig->get("enablejoin") == "true"){
+	if($this->getConfig()->get("enablejoin") == "true"){
 		$player = $event->getPlayer();
 		$command = str_replace("{player}", $player->getName(), $this->getConfig()->get("JoinCommand"));
 		$this->getServer()->dispatchCommand(new ConsoleCommandSender(), $command);
@@ -24,7 +24,7 @@ class Main extends PluginBase implements Listener {
   }
   
   public function onDeath(PlayerDeathEvent $event) {
-	if($this->getConfig->get("enabledeath") == "true"){
+	if($this->getConfig()->get("enabledeath") == "true"){
 		$player = $event->getEntity();
 		$command = str_replace("{player}", $player->getName(), $this->getConfig()->get("DeathCommand"));
 		$this->getServer()->dispatchCommand(new ConsoleCommandSender(), $command);
@@ -32,7 +32,7 @@ class Main extends PluginBase implements Listener {
   }
   
   public function onRespawn(PlayerRespawnEvent $event) {
-	if($this->getConfig->get("enablespawn") == "true"){
+	if($this->getConfig()->get("enablespawn") == "true"){
 		$player = $event->getPlayer();
 		$command = str_replace("{player}", $player->getName(), $this->getConfig()->get("RespawnCommand"));
 		$this->getServer()->dispatchCommand(new ConsoleCommandSender(), $command);
@@ -40,7 +40,7 @@ class Main extends PluginBase implements Listener {
   }
   
   public function onQuit(PlayerQuitEvent $event) {
-	if($this->getConfig->get("enableleave") == "true"){
+	if($this->getConfig()->get("enableleave") == "true"){
 		$player = $event->getPlayer();
 		$command = str_replace("{player}", $player->getName(), $this->getConfig()->get("LeaveCommand"));
 		$this->getServer()->dispatchCommand(new ConsoleCommandSender(), $command);
