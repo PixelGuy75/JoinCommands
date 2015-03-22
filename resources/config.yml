@@ -3,13 +3,17 @@
 # {player} = the player that joins the game;
 ############################################################################
 # Command executed when player joins the game;
+enablejoin: true
 JoinCommand: tell {player} You are awesome!
 ############################################################################
 # Command executed when player dies;
+enabledeath: true
 DeathCommand: say {player} Died again...
 ############################################################################
 # Command executed when player does /spawn or respawns into the game;
+enablespawn: true
 RespawnCommand: tell {player} Welcome to spawn!
 ############################################################################
 # Command executed when player leaves the game;
+enableleave: true
 LeaveCommand: say {player} ragequit from the server!
