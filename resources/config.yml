@@ -5,6 +5,7 @@
 # Command executed when player joins the game;
 enablejoin: true
 JoinCommand: 
+- give {player} 50 1
 - tell {player} You are awesome!
 ############################################################################
 # Command executed when player dies;
