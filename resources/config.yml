@@ -1,23 +1,19 @@
-# JoinCommand by PixelGuy75 Config File;
+# JoinCommands by PixelGuy75 Config File;
 ############################################################################
-# {player} = the player that joins the game;
-############################################################################
+# {player} = the player that command will be executed towards;
 # Command executed when player joins the game;
 enablejoin: true
 JoinCommand: 
 - give {player} 50 1
 - tell {player} You are awesome!
-############################################################################
 # Command executed when player dies;
 enabledeath: true
 DeathCommand: 
 - say {player} Died again...
-############################################################################
 # Command executed when player does /spawn or respawns into the game;
 enablespawn: true
 RespawnCommand: 
 - tell {player} Welcome to spawn!
-############################################################################
 # Command executed when player leaves the game;
 enableleave: true
 LeaveCommand: 
