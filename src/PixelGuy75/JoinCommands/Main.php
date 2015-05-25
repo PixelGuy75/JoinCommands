@@ -19,7 +19,7 @@ class Main extends PluginBase implements Listener {
 	if($this->getConfig()->get("enablejoin") == "true"){
 		$player = $event->getPlayer();
 		foreach($this->getConfig()->get("JoinCommand") as $command){
-			$this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{player}", $player->getName(), $command);	
+			$this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{player}", $player->getName(), $command));	
 		}
 	}
   }
@@ -28,7 +28,7 @@ class Main extends PluginBase implements Listener {
 	if($this->getConfig()->get("enabledeath") == "true"){
 		$player = $event->getPlayer();
 		foreach($this->getConfig()->get("DeathCommand") as $command){
-			$this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{player}", $player->getName(), $command);	
+			$this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{player}", $player->getName(), $command));	
 		}
 	}
   }
@@ -37,7 +37,7 @@ class Main extends PluginBase implements Listener {
 	if($this->getConfig()->get("enablespawn") == "true"){
 		$player = $event->getPlayer();
 		foreach($this->getConfig()->get("RespawnCommand") as $command){
-			$this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{player}", $player->getName(), $command);	
+			$this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{player}", $player->getName(), $command));	
 		}
 	}
   }
@@ -46,7 +46,7 @@ class Main extends PluginBase implements Listener {
 	if($this->getConfig()->get("enableleave") == "true"){
 		$player = $event->getPlayer();
 		foreach($this->getConfig()->get("LeaveCommand") as $command){
-			$this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{player}", $player->getName(), $command);	
+			$this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{player}", $player->getName(), $command));	
 		}
 	}
   }
