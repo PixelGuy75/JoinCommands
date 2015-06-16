@@ -4,6 +4,7 @@ namespace PixelGuy75\JoinCommands;
 use pocketmine\command\ConsoleCommandSender;
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
+use pocketmine\Player;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerDeathEvent;
 use pocketmine\event\player\PlayerRespawnEvent;
@@ -26,9 +27,11 @@ class Main extends PluginBase implements Listener {
   
   public function onDeath(PlayerDeathEvent $event) {
 	if($this->getConfig()->get("enabledeath") == "true"){
-		$player = $event->getPlayer();
-		foreach($this->getConfig()->get("DeathCommand") as $command){
-			$this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{player}", $player->getName(), $command));	
+		$player = $event->getEntity();
+		if($player instance of Player) {
+			foreach($this->getConfig()->get("DeathCommand") as $command){
+				$this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{player}", $player->getName(), $command));	
+			}
 		}
 	}
   }
