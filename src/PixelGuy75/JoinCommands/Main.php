@@ -28,7 +28,7 @@ class Main extends PluginBase implements Listener {
   public function onDeath(PlayerDeathEvent $event) {
 	if($this->getConfig()->get("enabledeath") == "true"){
 		$player = $event->getEntity();
-		if($player instance of Player) {
+		if($player instanceof Player) {
 			foreach($this->getConfig()->get("DeathCommand") as $command){
 				$this->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace("{player}", $player->getName(), $command));	
 			}
