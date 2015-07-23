@@ -1,6 +1,6 @@
 <?php
 
-namespace PixelGuy75\JoinCommands;
+namespace pixelguy75\joincommands;
 
 use pocketmine\command\ConsoleCommandSender;
 use pocketmine\event\player\PlayerDeathEvent;
