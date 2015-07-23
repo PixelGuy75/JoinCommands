@@ -2,5 +2,4 @@ name: JoinCommands
 main: pixelguy75\joincommands\Main
 version: 1.5
 api: 1.0.0
-author: PixelGuy75
-load: POSTWORLD
+author: [Gamecrafter, PixelGuy75]
